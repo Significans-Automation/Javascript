@@ -1,0 +1,5 @@
+function() f {
+	alert("");
+}
+
+f();
