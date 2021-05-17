@@ -1,6 +1,7 @@
 /*
   Takes XML elements and loops through, converting the xml into a JSON object.
   Can be used in any extendscript tool (tested in InDesign)
+  -- Unfinished, may need polishing.
 */
 
 function xmlToObject(elements) {
@@ -12,10 +13,6 @@ function xmlToObject(elements) {
     for (var i = 0; i < elements.length; i++) {
         var element = elements[i];
         var name = element.markupTag.name;
-
-        if (name == "PackageDetails") {
-            var x = 0;
-        }
 
         if (element.xmlElements.length >= 1 && element.contents.indexOf("\r") > -1) {
 
